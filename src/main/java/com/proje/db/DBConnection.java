@@ -5,6 +5,13 @@ public class DBConnection {
 	private String url;
 	private String username;
 	private String pw;
+	
+
+	public DBConnection(String url, String username, String pw) {
+		this.url = url;
+		this.username = username;
+		this.pw = pw;
+	}
 
 	public void openConnection() {
 		System.out.println("url: "+url);

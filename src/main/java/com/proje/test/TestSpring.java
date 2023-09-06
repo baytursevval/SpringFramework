@@ -22,7 +22,7 @@ public class TestSpring {
 		//2.yol
 		ConfigurableApplicationContext configurableApplicationContext=new ClassPathXmlApplicationContext("applicationContext.xml");
 		
-		DBConnection dbConnection2=(DBConnection) configurableApplicationContext.getBean("dbConnection");
+		DBConnection dbConnection2=(DBConnection) configurableApplicationContext.getBean("dbConnectionContructor");
 		dbConnection2.openConnection();
 		dbConnection2.closeConnection();
 		configurableApplicationContext.close();

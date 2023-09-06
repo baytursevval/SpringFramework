@@ -3,12 +3,19 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-	<bean id="dbConnection" class="com.proje.db.DBConnection">
+<!-- 	<bean id="dbConnection" class="com.proje.db.DBConnection">
 		<property name="url" value="mysql:localhost:8080"></property>
 		<property name="username" value="sevval"></property>
 		<property name="pw" value="123"></property>
-	</bean>
+     	</bean> 
+-->
+
+	<bean id="dbConnectionContructor" class="com.proje.db.DBConnection">
+		<constructor-arg name="url" value="mysql:localhost:8080"></constructor-arg>
+		<constructor-arg name="username" value="sevval"></constructor-arg>
+		<constructor-arg name="pw" value="12345"></constructor-arg>
 	
+	</bean>	
 	
 
 </beans>
