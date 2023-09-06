@@ -11,6 +11,9 @@ public class AppConfig {
 	@Bean
 	public DBConnection dbConnection() {
 		DBConnection dbConnection=new DBConnection();
+		dbConnection.setUrl("mysql.localhost");
+		dbConnection.setUsername("sevval");
+		dbConnection.setPw("");
 		return dbConnection;
 	}
 

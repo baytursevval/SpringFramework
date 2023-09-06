@@ -12,11 +12,11 @@ public class TestSpring {
 
 	public static void main(String[] args) {
 		
-		BeanFactory beanFactory=new ClassPathXmlApplicationContext("applicationContext.xml");
-		
-		DBConnection dbConnection=(DBConnection) beanFactory.getBean("dbConnection");
-		dbConnection.openConnection();
-		dbConnection.closeConnection();
+//		BeanFactory beanFactory=new ClassPathXmlApplicationContext("applicationContext.xml");
+//		
+//		DBConnection dbConnection=(DBConnection) beanFactory.getBean("dbConnection");
+//		dbConnection.openConnection();
+//		dbConnection.closeConnection();
 		
 		
 		//2.yol
@@ -29,17 +29,17 @@ public class TestSpring {
 		
 		
 		//3.yol
-		AbstractApplicationContext abstractApplicationContext=new ClassPathXmlApplicationContext("applicationContext.xml");
-		DBConnection dbConnection3=abstractApplicationContext.getBean("dbConnection",DBConnection.class);
-		dbConnection3.openConnection();
-		dbConnection3.closeConnection();
-		abstractApplicationContext.close();
-		
-		//4.yol
-		ApplicationContext applicationContext=new ClassPathXmlApplicationContext("applicationContext.xml");
-		DBConnection dbconnection4=(DBConnection) applicationContext.getBean("dbConnection");
-		dbconnection4.openConnection();
-		dbconnection4.closeConnection();
+//		AbstractApplicationContext abstractApplicationContext=new ClassPathXmlApplicationContext("applicationContext.xml");
+//		DBConnection dbConnection3=abstractApplicationContext.getBean("dbConnection",DBConnection.class);
+//		dbConnection3.openConnection();
+//		dbConnection3.closeConnection();
+//		abstractApplicationContext.close();
+//		
+//		//4.yol
+//		ApplicationContext applicationContext=new ClassPathXmlApplicationContext("applicationContext.xml");
+//		DBConnection dbconnection4=(DBConnection) applicationContext.getBean("dbConnection");
+//		dbconnection4.openConnection();
+//		dbconnection4.closeConnection();
 	}
 
 }
